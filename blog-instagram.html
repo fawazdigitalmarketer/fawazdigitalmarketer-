@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html>
 
 <head>
     <meta charset="UTF-8">
@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         .blog-header {
-            padding: 10rem 0 5rem;
+            padding: clamp(6rem, 15vw, 10rem) 0 clamp(3rem, 8vw, 5rem);
             text-align: center;
             background: var(--bg-secondary);
             border-bottom: 1px solid var(--border-color);
@@ -50,9 +50,9 @@
         }
 
         .blog-content h2 {
-            margin: 3.5rem 0 1.5rem;
+            margin: clamp(2rem, 6vw, 3.5rem) 0 1.5rem;
             color: var(--primary-color);
-            font-size: 2rem;
+            font-size: clamp(1.5rem, 5vw, 2rem);
         }
 
         .blog-content p {
@@ -149,7 +149,7 @@
 
     <div class="container">
         <div class="hero-img-container" style="margin-top: 3rem;">
-            <img src="/Users/user/.gemini/antigravity/brain/14983e0a-6000-4521-b6aa-519be0855db2/instagram_marketing_hero_new_1773508830244.png" alt="Instagram Marketing Visual">
+            <img src="assets/blog-instagram-hero.png" alt="Instagram Marketing Visual" style="width: 100%; height: auto; display: block;">
         </div>
     </div>
 
