@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Marketing Tips | Muhammed Fawaz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .blog-header {
+            padding: 10rem 0 5rem;
+            text-align: center;
+            background: var(--bg-secondary);
+            border-bottom: 1px solid var(--border-color);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-img-container {
+            max-width: 750px;
+            margin: 0 auto;
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+            position: relative;
+            z-index: 10;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform: translateZ(0);
+            backface-visibility: hidden;
+        }
+
+        .hero-img-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .blog-container {
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 0 1.5rem 6rem;
+        }
+
+        .blog-content h2 {
+            margin: 3.5rem 0 1.5rem;
+            color: var(--primary-color);
+            font-size: 2rem;
+        }
+
+        .blog-content p {
+            margin-bottom: 1.75rem;
+            font-size: 1.15rem;
+            line-height: 1.8;
+            color: var(--text-secondary);
+        }
+
+        .blog-meta-large {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 2rem;
+            font-weight: 500;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .back-home {
+            position: fixed;
+            top: 2rem;
+            left: 2rem;
+            z-index: 100;
+            transform: translateZ(0);
+            backface-visibility: hidden;
+        }
+
+        .tips-list {
+            list-style: none;
+            margin: 2.5rem 0;
+            counter-reset: blog-counter;
+        }
+
+        .tips-list li {
+            padding-left: 3.5rem;
+            position: relative;
+            margin-bottom: 2rem;
+            font-size: 1.15rem;
+            line-height: 1.6;
+            color: var(--text-secondary);
+        }
+
+        .tips-list li::before {
+            counter-increment: blog-counter;
+            content: counter(blog-counter);
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 2.5rem;
+            height: 2.5rem;
+            background: var(--gradient-brand);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            font-size: 1rem;
+        }
+
+        .tips-list li strong {
+            display: block;
+            color: var(--text-primary);
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Background Visual Elements -->
+    <canvas id="fluid-canvas"></canvas>
+    <div class="cursor-dot"></div>
+    <div class="bg-grid"></div>
+    <div class="bg-blobs">
+        <div class="bg-blob blob-1"></div>
+        <div class="bg-blob blob-2"></div>
+    </div>
+
+    <a href="index.html" onclick="if(document.referrer.includes('index.html') || document.referrer === ''){ history.back(); return false; }" class="btn btn-outline back-home"><i class="fa-solid fa-arrow-left"></i> Back to Home</a>
+
+    <header class="blog-header">
+        <div class="container">
+            <div class="badge">Instagram Strategy</div>
+            <h1>Simple Instagram Marketing Tips for Small Businesses</h1>
+            <div class="blog-meta-large">
+                <span><i class="fa-solid fa-calendar"></i> March 14, 2026</span>
+                <span><i class="fa-solid fa-clock"></i> 5 min read</span>
+                <span><i class="fa-solid fa-user"></i> Muhammed Fawaz</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="hero-img-container" style="margin-top: 3rem;">
+            <img src="/Users/user/.gemini/antigravity/brain/14983e0a-6000-4521-b6aa-519be0855db2/instagram_marketing_hero_new_1773508830244.png" alt="Instagram Marketing Visual">
+        </div>
+    </div>
+
+    <main class="blog-container">
+        <article class="blog-content">
+            <h2>Introduction</h2>
+            <p>Instagram has become a powerful platform for small businesses to connect with potential customers and
+                build brand awareness. With the right content strategy, businesses can reach a wider audience and
+                attract more customers online.</p>
+
+            <h2>Key Tips</h2>
+            <ol class="tips-list">
+                <li><strong>Consistent Posting</strong> Post at least 3–4 times per week to keep your audience engaged.
+                    Consistency helps improve visibility and interaction with your followers.</li>
+                <li><strong>Use Reels</strong> Instagram Reels can significantly increase your reach. Short videos are a
+                    great way to showcase products, explain services, or share useful tips with your audience.</li>
+                <li><strong>Use Relevant Hashtags</strong> Using hashtags related to your business helps your content
+                    reach people who are interested in your niche.</li>
+                <li><strong>Engage with Followers</strong> Reply to comments, use Instagram Stories, and create polls or
+                    questions to interact with your audience and build stronger relationships.</li>
+            </ol>
+
+            <h2>Conclusion</h2>
+            <p>By maintaining consistent content, using reels effectively, and engaging with followers, small businesses
+                can use Instagram to grow their brand and attract more customers.</p>
+        </article>
+    </main>
+
+    <footer style="padding: 4rem 0; text-align: center; border-top: 1px solid var(--border-color);">
+        <p>&copy; 2026 Muhammed Fawaz. All rights reserved.</p>
+    </footer>
+
+    <script src="fluid-cursor.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

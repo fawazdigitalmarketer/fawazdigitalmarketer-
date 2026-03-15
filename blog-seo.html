@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEO Beginner Guide | Muhammed Fawaz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .blog-header {
+            padding: 10rem 0 5rem;
+            text-align: center;
+            background: var(--bg-secondary);
+            border-bottom: 1px solid var(--border-color);
+            position: relative;
+            overflow: hidden;
+        }
+        .hero-img-container {
+            max-width: 750px;
+            margin: 3rem auto 3rem;
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+            position: relative;
+            z-index: 10;
+            transform: translateZ(0);
+            backface-visibility: hidden;
+        }
+        .hero-img-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .blog-container {
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 0 1.5rem 6rem;
+        }
+        .blog-content h2 {
+            margin: 3.5rem 0 1.5rem;
+            color: var(--primary-color);
+            font-size: 2rem;
+        }
+        .blog-content p {
+            margin-bottom: 1.75rem;
+            font-size: 1.15rem;
+            line-height: 1.8;
+            color: var(--text-secondary);
+        }
+        .blog-meta-large {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 2rem;
+            font-weight: 500;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+        .back-home {
+            position: fixed;
+            top: 2rem;
+            left: 2rem;
+            z-index: 100;
+            transform: translateZ(0);
+            backface-visibility: hidden;
+        }
+        .tips-list {
+            list-style: none;
+            margin: 2.5rem 0;
+            counter-reset: blog-counter;
+        }
+        .tips-list li {
+            padding-left: 3.5rem;
+            position: relative;
+            margin-bottom: 2rem;
+            font-size: 1.15rem;
+            line-height: 1.6;
+            color: var(--text-secondary);
+        }
+        .tips-list li::before {
+            counter-increment: blog-counter;
+            content: counter(blog-counter);
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 2.5rem;
+            height: 2.5rem;
+            background: var(--gradient-brand);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            font-size: 1rem;
+        }
+        .tips-list li strong {
+            display: block;
+            color: var(--text-primary);
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Background Visual Elements -->
+    <canvas id="fluid-canvas"></canvas>
+    <div class="cursor-dot"></div>
+    <div class="bg-grid"></div>
+    <div class="bg-blobs">
+        <div class="bg-blob blob-1"></div>
+        <div class="bg-blob blob-4"></div>
+    </div>
+
+    <a href="index.html" onclick="if(document.referrer.includes('index.html') || document.referrer === ''){ history.back(); return false; }" class="btn btn-outline back-home"><i class="fa-solid fa-arrow-left"></i> Back to Home</a>
+
+    <header class="blog-header">
+        <div class="container">
+            <div class="badge">SEO Guide</div>
+            <h1>Beginner’s Guide to SEO for Business Websites</h1>
+            <div class="blog-meta-large">
+                <span><i class="fa-solid fa-calendar"></i> March 12, 2026</span>
+                <span><i class="fa-solid fa-clock"></i> 4 min read</span>
+                <span><i class="fa-solid fa-user"></i> Muhammed Fawaz</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="hero-img-container">
+            <img src="/Users/user/.gemini/antigravity/brain/14983e0a-6000-4521-b6aa-519be0855db2/blog_seo_hero_1773479511380.png" alt="SEO Concept Visual">
+        </div>
+    </div>
+
+    <main class="blog-container">
+        <article class="blog-content">
+            <h2>Introduction</h2>
+            <p>Search Engine Optimization (SEO) is the art and science of getting your website found on Google. For many business owners, it feels like a dark art, but the fundamentals are actually quite straightforward once you break them down into actionable steps.</p>
+            <p>The goal of SEO is simple: to convince search engines that your website is the most relevant and high-quality result for a user's specific query.</p>
+
+            <h2>Key Tips</h2>
+            <ol class="tips-list">
+                <li><strong>Keyword Research:</strong> Identify the exact phrases your customers are using to find services like yours. Use tools to find "low-hanging fruit" keywords.</li>
+                <li><strong>On-Page Optimization:</strong> Ensure your main keyword is in your title tag, meta description, and first paragraph.</li>
+                <li><strong>Mobile Responsiveness:</strong> Google uses "mobile-first" indexing. If your site doesn't work perfectly on a phone, you won't rank.</li>
+                <li><strong>Fast Loading Speeds:</strong> Users (and Google) hate slow websites. Optimize your images and minimize heavy scripts.</li>
+                <li><strong>Build Authority:</strong> Get other reputable websites to link to yours. Backlinks remain one of the strongest ranking signals.</li>
+            </ol>
+
+            <h2>Conclusion</h2>
+            <p>SEO is not a one-time setup; it's a long-term investment. Unlike paid ads which stop working the moment you stop paying, SEO builds "equity" over time, providing a sustainable stream of organic traffic to your business.</p>
+            <p>By focusing on providing real value to your users and following technical best practices, you can eventually outrank much larger competitors and become the go-to authority in your niche.</p>
+        </article>
+    </main>
+
+    <footer style="padding: 4rem 0; text-align: center; border-top: 1px solid var(--border-color);">
+        <p>&copy; 2026 Muhammed Fawaz. All rights reserved.</p>
+    </footer>
+
+    <script src="fluid-cursor.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

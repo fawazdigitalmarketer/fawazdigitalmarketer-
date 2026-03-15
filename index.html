@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammed Fawaz | Digital Marketing Expert</title>
+    <meta name="description" content="Helping Businesses Grow with Digital Marketing. Expert in SEO, Social Media Marketing, and Paid Ads.">
+    <!-- Fonts: Inter for readable text, Outfit for sleek modern headings -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Background Visual Elements -->
+    <div class="bg-grid"></div>
+    <div class="bg-blobs">
+        <div class="bg-blob blob-1"></div>
+        <div class="bg-blob blob-2"></div>
+        <div class="bg-blob blob-3"></div>
+    </div>
+    <div class="decorative-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+    </div>
+
+    <!-- Fluid Cursor Canvas -->
+    <canvas id="fluid-canvas"></canvas>
+    <div class="cursor-dot"></div>
+
+    <!-- Background Elements for Futuristic UI -->
+    <div class="bg-glow top-left"></div>
+    <div class="bg-glow bottom-right"></div>
+    <div class="bg-grid"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">Muhammed Fawaz<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact" class="btn btn-primary btn-sm">Let's Talk</a></li>
+            </ul>
+            <div class="nav-controls">
+                <button id="theme-toggle" aria-label="Toggle Theme">
+                    <i class="fa-solid fa-moon dark-icon"></i>
+                    <i class="fa-solid fa-sun light-icon"></i>
+                </button>
+                <button id="mobile-menu-btn" aria-label="Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <ul class="mobile-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="container hero-container">
+            <div class="hero-content reveal">
+                <div class="badge">🚀 Digital Marketing Expert</div>
+                <h1 class="hero-title">Helping Businesses <span class="gradient-text">Grow</span> with Digital Marketing</h1>
+                <p class="hero-subtitle">I specialize in scaling brands through data-driven SEO, dynamic social media campaigns, and high-converting paid ads.</p>
+                <div class="hero-cta">
+                    <a href="#services" class="btn btn-primary btn-lg">View Services <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="#contact" class="btn btn-outline btn-lg">Hire Me</a>
+                </div>
+                <!-- Stats -->
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <h3 class="stat-number">20+</h3>
+                        <p class="stat-label">Projects Delivered</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3 class="stat-number">50K+</h3>
+                        <p class="stat-label">Ad Spend Managed</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3 class="stat-number">98%</h3>
+                        <p class="stat-label">Client Retention</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual reveal reveal-delay">
+                <div class="analytics-card-wrapper">
+                    <div class="premium-growth-card">
+                        <img src="assets/muhammed-fawaz-hero.png" alt="Muhammed Fawaz" class="hero-profile-img">
+                    </div>
+                    
+                    <!-- Floating Outer Badges -->
+                    <a href="https://www.instagram.com/fawazp.in" target="_blank" class="floating-badge badge-top" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/fawaz-p-marketing" target="_blank" class="floating-badge badge-bottom" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container about-container">
+            <div class="about-visual reveal">
+                <div class="about-image-wrapper">
+                    <img src="assets/muhammed-fawaz.jpg" alt="Muhammed Fawaz" class="about-image">
+                    <div class="experience-badge glass-card">
+                        <span class="exp-years">5+</span>
+                        <span class="exp-text">Years of<br>Experience</span>
+                    </div>
+                </div>
+            </div>
+            <div class="about-content reveal reveal-delay">
+                <h2 class="section-title">Who is <span class="gradient-text">Muhammed Fawaz?</span></h2>
+                <p class="section-desc">I am a passionate Digital Marketer obsessed with combining creative strategy with hard data. My approach is simple: understand your audience intimately, and deliver messages that convert.</p>
+                
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <span>SEO Optimization</span>
+                        </div>
+                        <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <i class="fa-regular fa-thumbs-up"></i>
+                            <span>Social Media Marketing</span>
+                        </div>
+                        <div class="progress-bar"><div class="progress" style="width: 95%;"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <i class="fa-solid fa-bullseye"></i>
+                            <span>Paid Ads (Google/Meta)</span>
+                        </div>
+                        <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <i class="fa-solid fa-pen-nib"></i>
+                            <span>Content Marketing</span>
+                        </div>
+                        <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section bg-alt">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">My <span class="gradient-text">Services</span></h2>
+                <p class="section-subtitle">Comprehensive digital solutions specifically tailored to elevate your brand and drive measurable revenue.</p>
+            </div>
+            
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card glass-card reveal">
+                    <div class="service-icon-wrapper">
+                        <i class="fa-solid fa-magnifying-glass-chart service-icon"></i>
+                    </div>
+                    <h3>SEO Optimization</h3>
+                    <p>Dominate search engine rankings with technical, on-page, and off-page SEO strategies that drive organic, high-intent traffic.</p>
+                    <ul class="service-features">
+                        <li><i class="fa-solid fa-check"></i> Keyword Research</li>
+                        <li><i class="fa-solid fa-check"></i> Technical Audits</li>
+                        <li><i class="fa-solid fa-check"></i> Link Building</li>
+                    </ul>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="service-card glass-card reveal" style="transition-delay: 100ms;">
+                    <div class="service-icon-wrapper">
+                        <i class="fa-solid fa-hashtag service-icon"></i>
+                    </div>
+                    <h3>Social Media Marketing</h3>
+                    <p>Build a loyal community and amplify your brand voice across platforms with engaging campaigns and interactive content.</p>
+                    <ul class="service-features">
+                        <li><i class="fa-solid fa-check"></i> Platform Strategy</li>
+                        <li><i class="fa-solid fa-check"></i> Community Management</li>
+                        <li><i class="fa-solid fa-check"></i> Influencer Outreach</li>
+                    </ul>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-card glass-card reveal" style="transition-delay: 200ms;">
+                    <div class="service-icon-wrapper">
+                        <i class="fa-solid fa-ad service-icon"></i>
+                    </div>
+                    <h3>Google & Meta Ads</h3>
+                    <p>Maximize your ROI with hyper-targeted ad campaigns designed to convert clicks into loyal, paying customers.</p>
+                    <ul class="service-features">
+                        <li><i class="fa-solid fa-check"></i> Search & Display Ads</li>
+                        <li><i class="fa-solid fa-check"></i> Retargeting Funnels</li>
+                        <li><i class="fa-solid fa-check"></i> A/B Testing</li>
+                    </ul>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="service-card glass-card reveal" style="transition-delay: 300ms;">
+                    <div class="service-icon-wrapper">
+                        <i class="fa-solid fa-newspaper service-icon"></i>
+                    </div>
+                    <h3>Content Marketing</h3>
+                    <p>Tell your brand's unique story through high-quality, relevant content that educates, entirely engages, and converts.</p>
+                    <ul class="service-features">
+                        <li><i class="fa-solid fa-check"></i> Blog Writing</li>
+                        <li><i class="fa-solid fa-check"></i> Video Scripts</li>
+                        <li><i class="fa-solid fa-check"></i> Email Newsletters</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- The Process Section -->
+    <section id="process" class="section process-section">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">The <span class="gradient-text">Process</span></h2>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-track"></div>
+                
+                <!-- Step 1 -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>1. Audit & Research</h3>
+                        <p>Understanding your market, competitors, and growth opportunities.</p>
+                    </div>
+                </div>
+                
+                <!-- Step 2 -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>2. Strategy & Structure</h3>
+                        <p>Building a clear SEO and funnel architecture.</p>
+                    </div>
+                </div>
+                
+                <!-- Step 3 -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>3. Execution</h3>
+                        <p>Development, optimization, and automation setup.</p>
+                    </div>
+                </div>
+                
+                <!-- Step 4 -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>4. Performance Tracking</h3>
+                        <p>Data-driven improvements and testing.</p>
+                    </div>
+                </div>
+                
+                <!-- Step 5 -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>5. Scaling</h3>
+                        <p>Turning initial traction into consistent growth.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="process-cta reveal">
+                <a href="#contact" class="btn btn-primary btn-lg rounded">Get Started</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section bg-alt">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">Client <span class="gradient-text">Testimonials</span></h2>
+                <p class="section-subtitle">Don't just take my word for it. Here's what my partners have to say.</p>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card glass-card reveal">
+                    <i class="fa-solid fa-quote-left quote-icon"></i>
+                    <p class="testimonial-text">"A reliable and dedicated digital marketer. He understood our requirements and provided practical strategies for social media growth and online visibility."</p>
+                    <div class="client-info">
+                        <img src="assets/testimonial-lubab.jpg" alt="Lubab" class="client-avatar">
+                        <div>
+                            <h4>Lubab</h4>
+                            <span>Startup founder</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card glass-card reveal" style="transition-delay: 150ms;">
+                    <i class="fa-solid fa-quote-left quote-icon"></i>
+                    <p class="testimonial-text">"He was very professional and easy to work with. The marketing ideas and website improvements helped us improve our online presence. Highly recommended for digital marketing support."</p>
+                    <div class="client-info">
+                        <img src="assets/testimonial-anshid.jpg" alt="Anshid" class="client-avatar">
+                        <div>
+                            <h4>Anshid</h4>
+                            <span>Business owner</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card glass-card reveal" style="transition-delay: 300ms;">
+                    <i class="fa-solid fa-quote-left quote-icon"></i>
+                    <p class="testimonial-text">"Great communication and clear strategy. The work was delivered on time and the marketing suggestions were very helpful for our business."</p>
+                    <div class="client-info">
+                        <img src="assets/testimonial-salman.jpg" alt="Salman Faris" class="client-avatar">
+                        <div>
+                            <h4>Salman Faris</h4>
+                            <span>Local brand manager</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2 class="section-title">Marketing <span class="gradient-text">Insights</span></h2>
+                <p class="section-subtitle">Tips, trends, and strategies to stay ahead in the ever-evolving digital landscape.</p>
+            </div>
+
+            <div class="blog-grid">
+                <article class="blog-card glass-card reveal">
+                    <div class="blog-thumbnail">
+                        <img src="/Users/user/.gemini/antigravity/brain/14983e0a-6000-4521-b6aa-519be0855db2/blog_instagram_hero_1773479493097.png" alt="Instagram Marketing">
+                    </div>
+                    <div class="blog-card-content">
+                        <div class="blog-meta">Mar 14, 2026 • 5 min read</div>
+                        <h3><a href="blog-instagram.html">Simple Instagram Marketing Tips for Small Businesses</a></h3>
+                        <p>Learn how small businesses can use Instagram content, reels, and hashtags to attract more customers and increase engagement.</p>
+                        <a href="blog-instagram.html" class="read-more">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="blog-card glass-card reveal" style="transition-delay: 150ms;">
+                    <div class="blog-thumbnail">
+                        <img src="/Users/user/.gemini/antigravity/brain/14983e0a-6000-4521-b6aa-519be0855db2/blog_seo_hero_1773479511380.png" alt="SEO Guide">
+                    </div>
+                    <div class="blog-card-content">
+                        <div class="blog-meta">Mar 12, 2026 • 4 min read</div>
+                        <h3><a href="blog-seo.html">Beginner’s Guide to SEO for Business Websites</a></h3>
+                        <p>A simple explanation of how search engine optimization helps websites rank higher on Google and attract organic traffic.</p>
+                        <a href="blog-seo.html" class="read-more">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="blog-card glass-card reveal" style="transition-delay: 300ms;">
+                    <div class="blog-thumbnail">
+                        <img src="/Users/user/.gemini/antigravity/brain/14983e0a-6000-4521-b6aa-519be0855db2/blog_smm_growth_hero_1773479530827.png" alt="SMM Growth">
+                    </div>
+                    <div class="blog-card-content">
+                        <div class="blog-meta">Mar 08, 2026 • 6 min read</div>
+                        <h3><a href="blog-smm-growth.html">How Social Media Marketing Helps Brands Grow</a></h3>
+                        <p>Discover how consistent social media strategy can improve brand awareness and drive customer loyalty.</p>
+                        <a href="blog-smm-growth.html" class="read-more">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section bg-alt">
+        <div class="container contact-container">
+            <div class="contact-info reveal">
+                <h2 class="section-title">Let's Grow Your Business <span class="gradient-text">Online</span></h2>
+                <p class="section-desc">Whether you have a specific project in mind or just want to explore how we can grow your business, I'd love to hear from you.</p>
+                
+                <div class="contact-methods">
+                    <div class="method-item">
+                        <div class="method-icon"><i class="fa-solid fa-envelope"></i></div>
+                        <div>
+                            <h4>Email Me</h4>
+                            <p><a href="mailto:fawazdigitalmarketer@gmail.com" class="contact-link">fawazdigitalmarketer@gmail.com</a></p>
+                        </div>
+                    </div>
+                    <div class="method-item">
+                        <div class="method-icon"><i class="fa-solid fa-phone"></i></div>
+                        <div>
+                            <h4>Call Me</h4>
+                            <p><a href="tel:+919656125697" class="contact-link">+91 9656125697</a></p>
+                        </div>
+                    </div>
+                    <div class="method-item">
+                        <div class="method-icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Malappuram, Kerala, India | Available Worldwide</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="social-links">
+                    <a href="https://wa.me/919656125697" target="_blank" class="social-icon" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/fawazp.in" target="_blank" class="social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/muhammed-fawaz-326b263ab" target="_blank" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://www.facebook.com/share/1FaX3aVECc/" target="_blank" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+            </div>
+            
+            <div class="contact-form-wrapper glass-card reveal reveal-delay">
+                <form id="contact-form" action="https://formsubmit.co/fawazdigitalmarketer@gmail.com" method="POST" class="contact-form">
+                    <!-- FormSubmit Configuration -->
+                    <input type="hidden" name="_subject" value="New Portfolio Message!">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_captcha" value="false">
+                    
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required placeholder="John Doe">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="john@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="service">Service Needed</label>
+                        <select id="service" name="service">
+                            <option value="seo">SEO Optimization</option>
+                            <option value="smm">Social Media Marketing</option>
+                            <option value="ads">Google / Meta Ads</option>
+                            <option value="content">Content Marketing</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="4" required placeholder="Tell me about your project..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+                    <div id="form-status" class="form-status"></div>
+                </form>
+                <p class="form-trust-line"><i class="fa-solid fa-clock-rotate-left"></i> I usually reply within 24 hours</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-col">
+                <a href="#" class="logo">Muhammed Fawaz<span>.</span></a>
+                <p>Scaling businesses through data-driven digital marketing strategies.</p>
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/share/1FaX3aVECc/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/fawazp.in" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/muhammed-fawaz-326b263ab" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://wa.me/919656125697" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Legal</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Muhammed Fawaz Digital Marketing. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="fluid-cursor.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
