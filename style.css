@@ -601,6 +601,12 @@ Common Section Elements
         width: 92%;
         padding: 0 0.5rem;
     }
+    .hero-cta .btn-lg {
+        padding: 0.75rem 1.5rem;
+        font-size: 1rem;
+        width: auto;
+        flex: 0 1 auto;
+    }
 }
 .hero-title {
     font-size: clamp(2.5rem, 8vw, 4.5rem);
