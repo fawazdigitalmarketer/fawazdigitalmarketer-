@@ -607,6 +607,14 @@ Common Section Elements
         width: auto;
         flex: 0 0 auto;
     }
+    .premium-growth-card {
+        max-width: 280px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .about-image-wrapper {
+        max-width: 260px !important;
+    }
     .method-item {
         gap: 1rem;
     }
