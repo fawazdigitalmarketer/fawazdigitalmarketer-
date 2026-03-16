@@ -607,6 +607,20 @@ Common Section Elements
         width: auto;
         flex: 0 0 auto;
     }
+    .method-item {
+        gap: 1rem;
+    }
+    .method-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+    .method-item h4 {
+        font-size: 1rem;
+    }
+    .method-item p, .contact-link {
+        font-size: 0.85rem;
+    }
 }
 .hero-title {
     font-size: clamp(2.5rem, 8vw, 4.5rem);
