@@ -414,6 +414,14 @@ nav.scrolled {
     font-weight: 800;
     color: var(--text-primary);
     letter-spacing: -0.5px;
+    transition: font-size var(--transition-normal);
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 1.25rem;
+        padding-left: 0.5rem;
+    }
 }
 
 .logo span {
