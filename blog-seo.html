@@ -103,6 +103,39 @@
             font-size: 1.25rem;
             margin-bottom: 0.5rem;
         }
+        .blog-nav-logo {
+            position: fixed;
+            top: 2rem;
+            left: 2rem;
+            z-index: 1000;
+            background: var(--glass-bg);
+            padding: 0.4rem 0.8rem;
+            border-radius: 50px;
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--glass-border);
+            text-decoration: none;
+            transition: all var(--transition-normal);
+        }
+
+        .blog-nav-logo:hover {
+            background: var(--bg-tertiary);
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 480px) {
+            .blog-nav-logo {
+                font-size: 0.85rem !important;
+                top: 1rem;
+                left: 1rem;
+                padding: 0.3rem 0.6rem;
+            }
+            .blog-header h1 {
+                font-size: 1.75rem !important;
+            }
+            .blog-header {
+                padding: 5rem 0 2rem;
+            }
+        }
     </style>
 </head>
 <body>
@@ -115,7 +148,7 @@
         <div class="bg-blob blob-4"></div>
     </div>
 
-    <a href="index.html" onclick="if(document.referrer.includes('index.html') || document.referrer === ''){ history.back(); return false; }" class="logo" style="position: fixed; top: 1.5rem; left: 1.5rem; z-index: 100; font-size: 1.25rem;">Muhammed Fawaz<span>.</span></a>
+    <a href="index.html" onclick="if(document.referrer.includes('index.html') || document.referrer === ''){ history.back(); return false; }" class="logo blog-nav-logo">Muhammed Fawaz<span>.</span></a>
 
     <header class="blog-header">
         <div class="container">
