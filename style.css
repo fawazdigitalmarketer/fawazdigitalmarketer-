@@ -623,7 +623,7 @@ Common Section Elements
         height: 40px;
         font-size: 1rem;
     }
-    .method-item h4 {
+    .method-item h3 {
         font-size: 1rem;
     }
     .method-item p, .contact-link {
@@ -1263,7 +1263,7 @@ Testimonials Section
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.client-info h4 {
+.client-info h3 {
     font-size: 1rem;
     margin-bottom: 0.2rem;
 }
@@ -1397,7 +1397,7 @@ Contact Section
     flex-shrink: 0;
 }
 
-.method-item h4 {
+.method-item h3 {
     margin-bottom: 0.25rem;
 }
 
@@ -1550,7 +1550,7 @@ Footer
     box-shadow: 0 5px 15px rgba(var(--primary-rgb), 0.3);
 }
 
-.footer-col h4 {
+.footer-col h3 {
     margin-bottom: 1.5rem;
     font-size: 1.1rem;
 }
