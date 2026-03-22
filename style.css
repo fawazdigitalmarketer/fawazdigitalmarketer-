@@ -1103,6 +1103,13 @@ Services Section
     position: relative;
 }
 
+@media (max-width: 480px) {
+    #services .container {
+        width: 100%;
+        padding: 0 8px;
+    }
+}
+
 .service-card {
     flex: 0 1 calc((100% - 4rem) / 3);
     min-width: 280px;
