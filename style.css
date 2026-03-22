@@ -1066,39 +1066,16 @@ Services Section
 ==================================== 
 */
 .services-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: clamp(1.5rem, 4vw, 2rem);
-}
-
-/* Center the last 2 cards when there are 5 (row of 2 centered under row of 3) */
-.services-grid .service-card:nth-child(4) {
-    grid-column: 1 / 2;
-    margin-left: calc(50% + clamp(0.75rem, 2vw, 1rem));
-}
-
-.services-grid .service-card:nth-child(5) {
-    grid-column: 2 / 3;
-}
-
-@media (max-width: 900px) {
-    .services-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .services-grid .service-card:nth-child(4),
-    .services-grid .service-card:nth-child(5) {
-        grid-column: auto;
-        margin-left: 0;
-    }
-}
-
-@media (max-width: 600px) {
-    .services-grid {
-        grid-template-columns: 1fr;
-    }
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    position: relative;
 }
 
 .service-card {
+    flex: 0 1 calc((100% - 4rem) / 3);
+    min-width: 280px;
     padding: 2rem 1.5rem;
 }
 
