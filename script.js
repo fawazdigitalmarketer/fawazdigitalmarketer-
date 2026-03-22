@@ -212,10 +212,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 // Submit to Google Sheets (Secondary background save)
                 const googleSheetsURL = 'https://script.google.com/macros/s/AKfycbxkDIZbjbeVH-ygLtmPJBVvHwHyfhHRis9JPQKxurUAN8xfhOQFVrlums-bvU4jtEPh/exec';
+                
                 fetch(googleSheetsURL, {
                     method: 'POST',
                     mode: 'no-cors',
-                    body: formData
+                    body: new URLSearchParams(formData)
                 }).catch(err => console.error('Google Sheets backup error:', err));
 
                 const result = await response.json();
