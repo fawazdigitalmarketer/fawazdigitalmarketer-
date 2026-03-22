@@ -200,6 +200,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const data = Object.fromEntries(formData.entries());
 
             try {
+                // Submit to FormSubmit (Primary Display Logic)
                 const response = await fetch('https://formsubmit.co/ajax/fawazdigitalmarketer@gmail.com', {
                     method: 'POST',
                     headers: { 
@@ -208,6 +209,13 @@ document.addEventListener('DOMContentLoaded', () => {
                     },
                     body: JSON.stringify(data)
                 });
+
+                // Submit to Google Sheets (Secondary background save)
+                const googleSheetsURL = 'https://script.google.com/macros/s/AKfycbxkDIZbjbeVH-ygLtmPJBVvHwHyfhHRis9JPQKxurUAN8xfhOQFVrlums-bvU4jtEPh/exec';
+                fetch(googleSheetsURL, {
+                    method: 'POST',
+                    body: formData
+                }).catch(err => console.error('Google Sheets backup error:', err));
 
                 const result = await response.json();
 
