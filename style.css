@@ -1109,36 +1109,7 @@ Services Section
     padding: 2rem 1.5rem;
 }
 
-@media (max-width: 480px) {
-    .services-grid {
-        gap: 1rem;
-    }
-    .service-card {
-        flex: 0 1 calc(50% - 0.5rem);
-        min-width: 140px;
-        padding: 1.25rem 1rem;
-    }
-    .service-card h3 {
-        font-size: 1.1rem;
-        margin-bottom: 0.5rem;
-    }
-    .service-card p {
-        font-size: 0.8rem;
-        margin-bottom: 1rem;
-    }
-    .service-features li {
-        font-size: 0.75rem;
-        margin-bottom: 0.25rem;
-    }
-    .service-icon-wrapper {
-        width: 40px;
-        height: 40px;
-        margin-bottom: 1rem;
-    }
-    .service-icon {
-        font-size: 1.1rem;
-    }
-}
+
 
 @media (min-width: 480px) {
     .service-card {
@@ -1778,6 +1749,13 @@ The Process Section
 .process-cta {
     text-align: center;
     margin-top: 5rem;
+}
+
+@media (max-width: 480px) {
+    .process-cta .btn {
+        font-size: 1rem;
+        padding: 0.875rem 1.5rem;
+    }
 }
 
 @media (max-width: 768px) {
