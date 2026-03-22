@@ -419,7 +419,7 @@ nav.scrolled {
 
 @media (max-width: 480px) {
     .logo {
-        font-size: 1.25rem;
+        font-size: 1.05rem;
         padding-left: 0.5rem;
     }
 }
@@ -653,10 +653,23 @@ Common Section Elements
 
 .hero-stats {
     display: flex;
-    gap: 1.25rem;
+    gap: 1rem;
     border-top: 1px solid var(--border-color);
     padding-top: 2rem;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+@media (max-width: 480px) {
+    .hero-stats {
+        gap: 0.5rem;
+    }
+    .stat-number {
+        font-size: 1.35rem;
+    }
+    .stat-label {
+        font-size: 0.75rem;
+    }
 }
 
 @media (min-width: 480px) {
