@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://fawazp.in/sitemap.xml
+Sitemap: https://www.fawazp.in/sitemap.xml
